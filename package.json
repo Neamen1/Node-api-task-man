@@ -2,9 +2,6 @@
   "name": "my_project",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "",
   "license": "ISC",
   "description": "",
@@ -23,7 +20,8 @@
     "testEnvironment": "node"
   },
   "scripts": {
-	"test": "jest"
+	"test": "jest",
+	"start": "Node src/app.js"
   }
 
 }
