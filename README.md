@@ -9,7 +9,7 @@ This Node.js project implements a RESTful API for managing tasks. It allows user
 - [Installation](#Installation)
 - [Usage](#Usage)
 - [Endpoints](#Endpoints)
-- [Project Structure](#Project Structure)
+- [Project-Structure](#Project-Structure)
 - [Testing](#Testing)
 - [Contact](#Contact)
 
@@ -32,6 +32,28 @@ npm install
 ```sh
 npm start
 ```
+
+2. Run tests:
+```sh
+npm test
+```
+
+## Endpoints
+The following endpoints are available in the API:
+
+- GET /tasks: Retrieve all tasks.
+- GET /tasks/:id: Retrieve a specific task by ID.
+- POST /tasks: Create a new task.
+- PUT /tasks/:id: Update an existing task by ID.
+- DELETE /tasks/:id: Delete a task by ID.
+
+## Project Structure
+- app.js: The main application file that sets up the Express server and middleware.
+- taskController.js: Contains the logic for task-related operations such as creating, reading, updating, and deleting tasks.
+- database.js: Manages the database configuration and connection setup.
+- requestLogger.js: Middleware for logging incoming requests to the server.
+- tasks.test.js: Contains tests for the task controller to ensure the API endpoints function correctly.
+- database.test.js: Contains tests for the database to ensure db to function correctly.
 
 
 ## Contact
