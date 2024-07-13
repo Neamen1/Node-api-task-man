@@ -28,11 +28,11 @@ npm install
 ```
 
 ## Usage 
-1. Start the development server:
+1. Start the server:
 ```sh
-npm run dev
+npm start
 ```
-Or start 
+
 
 ## Contact
 For any questions or feedback, please contact:
