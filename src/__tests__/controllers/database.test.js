@@ -45,7 +45,7 @@ jest.mock('sqlite3', () => {
       });
   
       it('should create database instance without error', () => {
-          expect(sqlite3.Database).toHaveBeenCalledWith('./tasks.db', sqlite3.OPEN_READWRITE, expect.any(Function));
+          expect(sqlite3.Database).toHaveBeenCalledWith('src/tasks.db', sqlite3.OPEN_READWRITE, expect.any(Function));
       });
   
       it('should handle database initialization error', () => {
