@@ -18,6 +18,9 @@ function closeDatabase() {
             return ;
         }
         console.log('Closed the database connection.');
+        setTimeout((function() { 
+            return process.kill(process.pid); // close process after database is closed
+            }), 500);
     });
 }
 
