@@ -1,7 +1,7 @@
 const sqlite3 = require('sqlite3').verbose();
 
 // Create a new database instance
-let db = new sqlite3.Database('./tasks.db', sqlite3.OPEN_READWRITE, (err) => {
+let db = new sqlite3.Database('src/tasks.db', sqlite3.OPEN_READWRITE, (err) => {
     if (err) {
         console.error(err.message);
         throw err;
